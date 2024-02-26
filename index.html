@@ -5,19 +5,40 @@
     <title>Test Page for Accessibility</title>
     <style>
         .hidden { display: none; }
+        .image-container { margin-bottom: 20px; }
+        .image-description { color: #666; }
     </style>
 </head>
 <body>
     <h1 style="color: #ccc;">Test Page for Accessibility Checks</h1>
     <p>This is a test page to demonstrate common accessibility issues.</p>
-    <!-- Image without alt attribute -->
-    <img src="1.jpg" width="300" height="200">
-    <!-- Image with meaningless alt attribute -->
-    <img src="70367133-Elfant-mit-Jungtieren-Addo-Elefanten-Nationalpark-Ostkap-Suedafrika-Afrika.jpeg" alt>
-    <!-- Link without discernible text -->
-    <img src="2.jpg" height="300" width="200">
-    <img src="3.jpg" height="300" width="200">
-    <img src="4.jpg" height="300" width="200">
+    <div class="image-container">
+        <img src="1.jpg" width="300" height="200">
+        <p class="image-description">Beschreibung des ersten Bildes</p>
+    </div>
+    <div class="image-container">
+        <img src="70367133-Elfant-mit-Jungtieren-Addo-Elefanten-Nationalpark-Ostkap-Suedafrika-Afrika.jpeg"  width="300" height="200">
+        <p class="image-description">Beschreibung des zweiten Bildes</p>
+    </div>
+    <div class="image-container">
+        <img src="2.jpg"  width="300" height="200">
+        <p class="image-description">Beschreibung des dritten Bildes</p>
+    </div>
+    <div class="image-container">
+        <img src="3.jpg"  width="300" height="200">
+        <p class="image-description">Beschreibung des vierten Bildes</p>
+    </div>
+    <div class="image-container">
+        <img src="4.jpg" width="300" height="200">
+        <p class="image-description">Beschreibung des fünften Bildes</p>
+
+    <!-- Demonstration der Tastaturnavigation -->
+    <h2>Tastaturnavigation testen</h2>
+    <p>Benutze die Tab-Taste, um durch die folgenden Elemente zu navigieren.</p>
+    <button tabindex="1">Erster Button</button>
+    <button tabindex="2">Zweiter Button</button>
+    <input type="text" placeholder="Eingabefeld" tabindex="3">
+    <a href="#" tabindex="4">Link zum Anklicken</a>
 
 </body>
 </html>
